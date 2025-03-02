@@ -3,7 +3,7 @@
     "description": "rhoai default preset",
     "extends": ["config:recommended"],
     "branchPrefix": "renovate/",
-    "baseBranches": ["main", "test-1"],
+    "baseBranches": ["main", "test-1", "swpoc"],
     "ignoreTests": true,
     "automergeType": "pr",
     "automerge": true,
@@ -11,7 +11,7 @@
     "packageRules": [
       {
         "matchManagers": ["dockerfile"],
-        "matchBaseBranches": ["main", "test-1"],
+        "matchBaseBranches": ["main", "test-1", "swpoc"],
         "matchUpdateTypes": ["digest"],
         "matchFileNames": ["*Dockerfile.konflux*"],
         "enabled": true,
@@ -29,7 +29,7 @@
       },
       {
         "matchManagers": ["tekton"],
-        "matchBaseBranches": ["main", "test-1"],
+        "matchBaseBranches": ["main", "test-1", "swpoc"],
         "matchUpdateTypes": ["digest"],
         "enabled": true,
         "groupName": "Tekton Updates",
@@ -43,7 +43,7 @@
       },
       {
         "matchManagers": ["rpm"],
-        "matchBaseBranches": ["main", "test-1"],
+        "matchBaseBranches": ["main", "test-1", "swpoc"],
         "groupName": "RPM Updates",
         "commitMessageTopic": "RPM updates",
         "enabled": true,
