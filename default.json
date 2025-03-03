@@ -30,7 +30,7 @@
       {
         "matchManagers": ["tekton"],
         "matchBaseBranches": ["main", "test-1", "swpoc"],
-        "matchUpdateTypes": ["digest"],
+        "matchUpdateTypes": ["digest", "minor"],
         "enabled": true,
         "groupName": "Tekton Updates",
         "branchPrefix": "renovate/tekton-rhoai-2.16/",
@@ -88,7 +88,6 @@
         {
           "matchUpdateTypes": [
             "major",
-            "minor",
             "pin",
             "pinDigest",
             "patch",
@@ -97,7 +96,7 @@
           "enabled": false
         },
         {
-          "matchUpdateTypes": ["digest"],
+          "matchUpdateTypes": ["digest", "minor"],
           "enabled": true,
           "groupName": "Konflux references",
           "branchPrefix": "konflux/references/",
